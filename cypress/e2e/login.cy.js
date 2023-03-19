@@ -14,7 +14,7 @@ context('Funcionalidade: Página de Login' , () => {
         cy.get('.r-16y2uox > .css-1dbjc4n > .css-4rbku5 > .css-901oao').should('contain' , 'Home')
     });
 
-    it('Deve aparecer uma mensagem caso usuário não seja identificado', () => {
+    it('Deve aparecer uma mensagem de aviso caso usuário não seja identificado', () => {
         cy.get('.r-mk0yit').type('sugarfreebestin@gmail.com') 
         cy.get('[style="background-color: rgb(15, 20, 25); border-color: rgba(0, 0, 0, 0);"]').click()
         cy.get('.r-12vffkv > .r-1jgb5lz').should('contain' , 'Sorry, we could not find your account.')
